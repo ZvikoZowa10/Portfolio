@@ -284,3 +284,93 @@ section{
     transition:width 1.1s ease
 }
 
+
+/* projects */
+.filters{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin:0 0 24px
+}
+
+.chip{
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--text);
+    padding:.4rem 1rem;
+    border-radius:99px;
+    cursor:pointer;
+    font:inherit;
+    font-size:.9rem
+}
+
+.chip.on{
+    background:var(--text);
+    color:var(--bg);
+    border-color:var(--text)
+}
+
+.card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .2s,box-shadow .2s
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12)
+}
+
+.thumb{
+    height:150px;
+    display:flex;
+    align-items:flex-end;
+    padding:14px;
+    font-family:var(--hf);
+    font-size:1.4rem;
+    font-weight:700;
+    color:#fff
+}
+
+.card-body{
+    padding:18px;
+    display:flex;
+    flex-direction:column;gap:10px;
+    flex:1
+}
+
+.card-body p{
+    margin:0;
+    color:var(--muted);
+    font-size:.95rem
+}
+
+.tags{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap
+}
+
+.tags span{
+    font-size:.75rem;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:2px 8px;
+    color:var(--muted)
+}
+
+.card a{
+    margin-top:auto;
+    font-weight:500;
+    color:var(--accent);
+    text-decoration:none
+}
+
+.hide{
+    display:none
+}
+
