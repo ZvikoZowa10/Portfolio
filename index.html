@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zowa Zvikomborero · Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="#home">zowa<span>.dev</span></a>
+    <div style="display:flex;gap:10px;align-items:center">
+      <div class="nav-links" id="links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
+      </div>
+      <button class="icon-btn" id="theme" aria-label="Toggle theme">◐</button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <p class="eyebrow">Frontend Developer</p>
+    <h1>Hi, I’m Zowa Zvikomborero. I build <em>clean, fast</em> interfaces.</h1>
+    <p>I turn designs into responsive, accessible websites with <span class="typed" id="typed"></span></p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#work">View my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-5 reveal"><p class="eyebrow">About</p><h2>Design-minded, detail-obsessed.</h2></div>
+      <div class="col col-md-7 reveal">
+        <p>I’m a frontend developer who cares about how things feel as much as how they look. I work with semantic HTML, Bootstrap, modern CSS and vanilla JavaScript to ship pages that load quickly, adapt to every screen and stay usable for everyone.</p>
+        <p>I like clear structure, reusable components and code that the next developer can read without a guide.</p>
+        <div class="stats">
+          <div><b data-count="20">6</b> Projects built</div>
+          <div><b data-count="3">2</b> Years learning &amp; shipping</div>
+          <div><b data-count="100">100</b>% responsive</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <p class="eyebrow reveal">Skills</p><h2 class="reveal">What I work with</h2>
+    <div class="row" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <p class="eyebrow reveal">Selected work</p><h2 class="reveal">Projects</h2>
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="bootstrap">Bootstrap</button>
+      <button class="chip" data-f="javascript">JavaScript</button>
+      <button class="chip" data-f="css">CSS</button>
+    </div>
+    <div class="row" id="projects">
+
+      <div class="col col-md-4 project reveal" data-tags="bootstrap css">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#e4572e,#1a1a1f)">Real Estate</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">Real Estate</h3>
+            <p>Property listings website with a searchable grid, property detail cards and an enquiry form.</p>
+            <div class="tags"><span>bootstrap</span><span>css</span></div>
+            <a href="https://github.com/ZvikoZowa10/real-estate" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+    
+      <div class="col col-md-4 project reveal" data-tags="bootstrap javascript">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#2ea36b,#1a1a1f)">Soccer</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">Soccer</h3>
+            <p>Football website featuring fixtures, results and team pages with a responsive layout.</p>
+            <div class="tags"><span>style css</span><span>javascript</span></div>
+            <a href="https://github.com/zvikotate1710-dot/Soccer" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+     
+      <div class="col col-md-4 project reveal" data-tags="css javascript">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#2e86e4,#1a1a1f)">Tech Titans</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">Tech Titans</h3>
+            <p>Technology-focused site with bold visuals, interactive sections and a modern design.</p>
+            <div class="tags"><span>bootstrap css</span><span>javascript</span></div>
+            <a href="https://github.com/ZvikoZowa10/techtitans01" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col-md-4 project reveal" data-tags="bootstrap css">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#8a4fe4,#1a1a1f)">My Blog</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">My Blog</h3>
+            <p>Personal blog with clean typography, article cards and a mobile-friendly reading experience.</p>
+            <div class="tags"><span>bootstrap</span><span>css</span></div>
+            <a href="https://github.com/ZvikoZowa10/my_blog" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col col-md-4 project reveal" data-tags="bootstrap javascript">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#d4a017,#1a1a1f)">Trailblazers</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">Trailblazers</h3>
+            <p>Bold, modern website for the Trailblazers brand with a striking hero, feature sections and a responsive layout.</p>
+            <div class="tags"><span>tailwind css</span><span>javascript</span></div>
+            <a href="https://github.com/nosajris/trailblazers" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+     
+      <div class="col col-md-4 project reveal" data-tags="javascript css">
+        <article class="card">
+          <div class="thumb" style="background:linear-gradient(135deg,#c2386b,#1a1a1f)">Demand Pulse</div>
+          <div class="card-body">
+            <h3 style="font-size:1.15rem;margin:0">Demand Pulse</h3>
+            <p>Dashboard-style website that tracks and presents demand trends with clear visuals and a responsive layout.</p>
+            <div class="tags"><span>javascript</span><span>css</span></div>
+            <a href="#" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:18px">Project descriptions are placeholders: update them and add real links.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-5 reveal">
+        <p class="eyebrow">Contact</p><h2>Let’s build something.</h2>
+        <p style="color:var(--muted)">Open to frontend roles, freelance work and collaborations. Send a message and I’ll reply soon.</p>
+      </div>
+      <div class="col col-md-7 reveal">
+        <form id="form" novalidate>
+          <input id="name" placeholder="Your name" aria-label="Your name" required>
+          <input id="email" type="email" placeholder="Your email" aria-label="Your email" required>
+          <textarea id="text" rows="5" placeholder="Your message" aria-label="Your message" required></textarea>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <div class="msg" id="msg" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">© <span id="yr"></span> Zowa Zvikomborero · Built with HTML, Bootstrap, CSS &amp; JavaScript</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
